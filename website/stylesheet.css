@@ -1,0 +1,633 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* my own now
+
+
+
+
+*/
+
+header {
+    background:rgb(28, 151, 208);
+    color:#000;
+    text-align: center;
+}
+body {
+    margin-left: 0;
+    margin-right:0;
+    /* margin-top:60px; */
+    background:#999;
+    /* font-family: arial; */
+}
+
+.navbar{
+    overflow: hidden;
+    /* background-color:cadetblue; */
+    background:rgb(23, 132, 172);
+    position:fixed;
+    top: 0;
+    width:100%;
+    z-index:1;
+}
+.navbar-container{
+    width:100%;
+    /* max-width: 120rem; */
+}
+.navbar a{
+    font-family: Marker Felt, fantasy;
+    font-size: large;
+    color:white;
+    text-align: center;
+    text-decoration: none;
+}
+nav ul{
+    margin: 0;
+}
+nav ul li{
+    display: inline-block;
+    color:white;
+    padding:0px 35px 12px 35px;
+    /* list-style-type: none;*/
+}
+.background-rocket {
+    background-image: url("img/coverimg.jpeg");
+    background-size: cover;
+    text-align: left;
+    /* text-indent: -300px; */
+    padding: 320px
+}
+.background-text{
+    font-family:Bradley Hand, cursive;
+    font-size: 40px;
+    color:white;
+    position:relative;
+    top:270px;
+    left:-200px;
+    /* white-space: normal; */
+
+}
+#about {
+
+    display:grid;
+    grid-template-columns: 40% 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "picture title"
+    "picture intro"
+    "picture intro"
+    "picture intro";
+}
+.picture {
+    grid-area: picture;
+    height:500px;
+    text-align: center;
+}
+.positon-pic {
+    clip-path: circle();
+    text-indent: -20px;
+    height:270px;
+    position: relative;
+    top: 115px; 
+    background-repeat: no-repeat;
+}
+.title{
+    grid-area: title;
+}
+.title h1{
+    font-family:Marker Felt, fantasy;
+    font-size: 40px;
+    margin-top:53px;
+}
+.intro p{
+    font-family: monospace;
+    font-size:18px;
+    margin-top: 15px;
+    margin-right: 300px;
+}
+.intro{
+    grid-area: intro;
+}
+#about div:nth-child(even){
+    background-color:cornsilk;
+}
+#about div:nth-child(odd){
+    background-color:cornsilk;
+}
+.about p{
+    margin-top:0;
+}
+#Experience{
+    margin-top:0;
+}
+.res_pic{
+    background-color: white;
+    margin-top:0;
+    padding-top:60px;
+    padding-bottom:60px;
+    text-align: center;
+    /* height:1000px; */
+}
+#skills {
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "skill-title"
+} 
+.skill-title {
+    background-color: rgb(238, 214, 173);
+    height:1150px;
+    text-align: left;
+}
+.skill-title h1{
+    font-family:Marker Felt, fantasy;
+    color:rgb(34, 191, 226);
+    font-size: 40px;
+    margin-top:70px;
+    margin-left:18%;
+}
+.skill-title h2{
+    font-family:Marker Felt, fantasy;
+    color:black;
+    margin-top: 30px;
+    font-size: 22px;
+    margin-left:18%;
+}
+.skill-title p{
+    font-family:Arial, Helvetica, sans-serif;
+    color: black;
+    margin-top: 12px;
+    font-size: 18px;
+    margin-left:18%;
+    margin-right:18%;
+    line-height: 25px;
+}
+#projects {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-areas:
+    /* "project_title project_title project_title" */
+    "project1 project2 project3"
+    "project4 project5 project6";
+}
+.project_title{
+    height:170px;
+    background-color: cornsilk;
+
+}
+.project_title h1{
+    font-family:Marker Felt, fantasy;
+    color:rgb(34, 191, 226);
+    font-size: 40px;
+    padding-top:70px;
+    text-align: center;
+}
+.project1 {
+    grid-area: project1;
+    height:340px;
+    /* position:relative; */
+    text-align:center;
+}
+.project1-pic{
+    /* display:block; */
+    text-align: center;
+}
+.image__overlay {
+    position: relative;
+    top: -270px;
+    left: 70px;
+    width: 65%;
+    height: 80%;
+    color: rgb(36, 34, 34);
+    font-family: 'Quicksand', sans-serif; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+.image__overlay:hover {
+    opacity: 1;
+}
+.image__title {
+    font-size: 2em;
+    font-weight: bold;
+}
+.image__overlay a {
+    text-decoration: none;
+    font-size: 1.25em;
+    margin-top: 20px;
+    line-height:27px;
+    color:rgb(36, 34, 34);
+}
+.project2-pic{
+    height:150px;
+}
+.project2{
+    grid-area: project2;
+    text-align:center;
+}
+.image__overlay2 {
+    position: relative;
+    top: -157px;
+    left: 60px;
+    width: 75%;
+    height: 48%;
+    color: rgb(36, 34, 34);
+    font-family: 'Quicksand', sans-serif; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+.image__overlay2:hover {
+    opacity: 1;
+}
+.image__title2 {
+    font-size: 2em;
+    font-weight: bold;
+}
+.image__overlay2 a {
+    text-decoration: none;
+    font-size: 1.25em;
+    margin-top: 20px;
+    line-height:27px;
+    color:rgb(36, 34, 34);
+}
+.project3{
+    grid-area: project3;
+    text-align: center;
+}
+.project3-pic{
+    height:200px;
+}
+.image__overlay3 {
+    position: relative;
+    top: -206px;
+    left: 60px;
+    width: 75%;
+    height: 60%;
+    color: rgb(36, 34, 34);
+    font-family: 'Quicksand', sans-serif; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+.image__overlay3:hover {
+    opacity: 1;
+}
+.image__title3 {
+    font-size: 2em;
+    font-weight: bold;
+}
+.image__overlay3 a {
+    text-decoration: none;
+    font-size: 1.25em;
+    margin-top: 20px;
+    line-height:27px;
+    color:rgb(36, 34, 34);
+}
+.project4{
+    grid-area: project4;
+    text-align:center;
+}
+.project4-pic{
+    height:200px;
+    padding-top:30px;
+}
+.image__overlay4 {
+    position: relative;
+    top: -206px;
+    left: 60px;
+    width: 75%;
+    height: 60%;
+    color: rgb(36, 34, 34);
+    font-family: 'Quicksand', sans-serif; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+.image__overlay4:hover {
+    opacity: 1;
+}
+.image__title4 {
+    font-size: 2em;
+    font-weight: bold;
+}
+.image__overlay4 a {
+    text-decoration: none;
+    font-size: 1.25em;
+    margin-top: 20px;
+    line-height:27px;
+    color:rgb(36, 34, 34);
+}
+.project5{
+    grid-area: project5;
+}
+.project6{
+    grid-area: project6;
+}
+#projects div:nth-child(even){
+    background-color:cornsilk;
+}
+#projects div:nth-child(odd){
+    background-color:cornsilk;
+}
+.inter-title{
+    height:140px;
+    background-color: rgb(38, 175, 216);
+    /* background-color: rgb(209, 174, 115); */
+
+}
+.inter-title h1{
+    font-family:Marker Felt, fantasy;
+    color:orange;
+    font-size: 40px;
+    padding-top:70px;
+    text-align: center;
+}
+#interests{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    /* "project_title project_title project_title" */
+    "inter1-pic inter1-word"
+    "inter2-pic inter2-word"
+    "inter3-pic inter3-word"
+    "inter4-pic inter4-word";
+}
+.inter1-pic {
+    grid-area: inter1-pic;
+    height:500px;
+    text-align: center;
+}
+.inter1-pic-info {
+    height:200px;
+    position: relative;
+    top: 150px; 
+    background-repeat: no-repeat;
+}
+.inter1-word{
+    grid-area: inter1-word;
+}
+.inter1-word h2{
+    font-family: arial;
+    font-size:27px;
+    margin-top:50px;
+}
+.inter1-word p{
+    font-family: arial;
+    font-size:18px;
+    margin-top:30px;
+    line-height: 25px;
+    margin-right:15%;
+    margin-left:15%;
+}
+.inter2-pic{
+    grid-area: inter2-pic;
+    height:500px;
+    text-align: center;
+}
+.inter2-pic-info {
+    height:200px;
+    position: relative;
+    top: 150px; 
+    background-repeat: no-repeat;
+}
+.inter2-word{
+    grid-area: inter2-word;
+}
+.inter2-word h2{
+    font-family: arial;
+    font-size:27px;
+    margin-top:50px;
+}
+.inter2-word p{
+    font-family: arial;
+    font-size:18px;
+    margin-top:30px;
+    line-height: 25px;
+    margin-right:15%;
+    margin-left:15%;
+}
+.inter3-pic{
+    grid-area: inter3-pic;
+    height:500px;
+    text-align: center;
+}
+.inter3-pic-info {
+    height:200px;
+    position: relative;
+    top: 115px; 
+    background-repeat: no-repeat;
+}
+.inter3-word{
+    grid-area: inter3-word;
+}
+.inter3-word h2{
+    font-family: arial;
+    font-size:27px;
+    margin-top:50px;
+}
+.inter3-word p{
+    font-family: arial;
+    font-size:18px;
+    margin-top:30px;
+    line-height: 25px;
+    margin-right:15%;
+    margin-left:15%;
+}
+.inter4-pic{
+    grid-area: inter4-pic;
+    height:500px;
+    text-align: center;
+}
+.inter4-pic-info {
+    height:200px;
+    position: relative;
+    top: 115px; 
+    background-repeat: no-repeat;
+}
+.inter4-word{
+    grid-area: inter4-word;
+}
+.inter4-word h2{
+    font-family: arial;
+    font-size:27px;
+    margin-top:50px;
+}
+.inter4-word p{
+    font-family: arial;
+    font-size:18px;
+    margin-top:30px;
+    line-height: 25px;
+    margin-right:15%;
+    margin-left:15%;
+}
+#interests div:nth-child(even){
+    /* background-color:red; */
+    background-color:rgb(38, 175, 216);
+    /* background-color: rgb(209, 174, 115); */
+}
+#interests div:nth-child(odd){
+    background-color:rgb(38, 175, 216);
+    /* background-color: rgb(209, 174, 115); */
+}
+#contact{
+    height:550px;
+    background-color:rgb(52, 52, 52);
+}
+#contact h2{
+    font-family:Marker Felt, fantasy;
+    color:white;
+    font-size: 40px;
+    padding-top:70px;
+    text-align: center;
+}
+#contact p{
+    color:white;
+    text-align: center;
+    padding-top: 50px;
+}
+#contact h3{
+    color:white;
+    text-align: right;
+    padding-top:70px;
+    padding-right:10%;
+    font-size:20px;
+}
+#contact h4{
+    color:white;
+    text-align: right;
+    padding-top:20px;
+    padding-right:10%;
+    font-size:20px;
+}
+.line{
+    border-bottom:2px solid grey;
+    display:block;
+    padding-top:50px;
+    margin-right:100px;
+    margin-left:100px;
+}
+.line2{
+    border-bottom:2px solid black;
+    display:block;
+    text-align:center;
+    margin-right:30%;
+    margin-left:30%;
+    margin-top:35px;
+}
+
